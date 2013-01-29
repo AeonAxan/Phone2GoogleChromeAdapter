@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.widget.Toast;
 
+
 public class MainActivity extends Activity {
 
 	@Override
@@ -38,7 +39,9 @@ public class MainActivity extends Activity {
 		
 		// started with a wrong intent
 		Toast.makeText(this, "Dude! READ THE DOCUMENTATION!", Toast.LENGTH_SHORT).show();
-		finish();
+		
+		// kill app
+		System.exit(0);
 	}
 
 	@Override
